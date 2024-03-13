@@ -10,9 +10,9 @@
             <img src="../img/Logo-header.png" alt="Logo Estaciona fácil">
             <nav class="menu-standard">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#" class="sistema">O sistema</a></li>
-                <li><button class="acess"><a href="#">Acessar</a></button></li>
+                <li><button class="acess"><a href="acess.html">Acessar</a></button></li>
             </ul>
             </nav>
             <button class="hamburger-menu" aria-label="Abrir menu"><span class="icon-menu"></span></button>
@@ -26,7 +26,7 @@
                 </ul>
             </div>  
             <section class="container-acess">
-                <div class="create-account">
+                <div class="create-account" id="login">
                     <h1>Fazer login</h1>
                     <form action="" class="form">
                         <div class="form-group">
@@ -36,11 +36,11 @@
                         <div class="form-group">
                             <label for="password">Senha*</label>
                             <input type="password" id="password" name="password" required>
+                            <a href="#" class="recover-password">Esqueci minha senha</a>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn-acess">ENTRAR</button>
+                            <button type="submit" class="btn-acess"> <a href="#">ENTRAR</a></button>
                         </div>
-                        <a href="#" class="recover-password">Esqueci minha senha</a>
                     </form>
                     </div>
                 <div class="create-account">
@@ -51,7 +51,7 @@
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn-acess">PROCEGUIR</button>
+                            <button type="submit" class="btn-acess"><a href="#">PROCEGUIR</a></button>
                         </div>
                     </form>
                 </div>

@@ -9,6 +9,7 @@
 
 body{
   width: 100%;
+  background-color: #333;  
 }
 
 header {
@@ -67,7 +68,6 @@ header nav ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 1.5em;
-  padding: 50px;
 }
 
 .acess {
@@ -75,7 +75,7 @@ header nav ul li a {
   padding: 10px;
   border-radius: 18px;
   color: #000;
-  border: none; 
+  border: none;
 }
 
 .acess a {
@@ -87,14 +87,12 @@ header nav ul li a {
   border: none;
 } 
 
-.acess:hover {
+.acess:hover,
+.acess:hover a{
   background-color: #000;
-  transition: 0.5s;  
-}
-
-.acess a:hover{
-  color: #F0EE04;
-  transition: 0.5s;
+  color: #F0EE04; 
+  transition: .1s;
+  cursor: pointer;
 }
 
 main {
@@ -104,7 +102,6 @@ main {
   flex-direction: row;
   justify-content: center;
 }
-
 
 /*Geral - Menu responsivo */
 
@@ -159,15 +156,14 @@ main {
   border: none;
 }
 
-.menu ul li button.acess:hover {
+.menu ul li button.acess:hover,
+.menu ul li button.acess:hover a {
   background-color: #000;
-  transition: 0.5s;
+  color: #F0EE04;
+  transition: .1s;
+  cursor: pointer;
 }
 
-.menu ul li button.acess a:hover {
-  color: #F0EE04;
-  transition: 0.5s;
-}
 .hamburger-menu {
   background-color: #333;
   border: none;
@@ -217,8 +213,12 @@ footer {
 }
 
 div.icon-footer img{
-  width: 200px;
+  width: 180px;
   max-width: 100%;
+}
+
+div.menu-footer {
+  width: 180px;
 }
 
 div.menu-footer ul {
@@ -236,8 +236,13 @@ div.menu-footer ul li a {
   text-decoration: none; 
 }
 
+div.contact{
+  width: 180px;
+}
+
 div.contact h5 {
   font-weight: normal;
+  font-size: 0.7em;
 
 }
 
@@ -297,13 +302,12 @@ section div.img-home img{
   max-height: 100%;
 }
 
-.search-parking:hover {
+.search-parking:hover,
+.search-parking:hover a {
   background-color: #000;
-  transition: 0.5s;
-}
-.search-parking a:hover {
   color: #F0EE04;
-  transition: 0.5s;
+  transition: 0.1s;
+  cursor: pointer;
 }
 
 /* Acess */
@@ -311,14 +315,15 @@ section div.img-home img{
 section.container-acess {
   display: flex;
   flex-direction: row;
-  align-content: center;
-  justify-content: center;
+  align-content: start;
+  justify-content: start;
   padding: 50px 0;
   background-color: #5A5A5A;
   width: 600px;
+  height: 250px;
   max-width: 100%;
   border-radius: 15px;
-  margin-bottom: 100px;
+  margin: 50px 0px;
 }
 
 section.container-acess h1, label, a {
@@ -330,15 +335,24 @@ section.container-acess h1, label, a {
 div.form-group{
  align-items: center;
 }
+
 .create-account{
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   padding: 0 50px;
   width: 500px;
-  height: 300px;
+  height: 250px;
+}
+
+#login{
+  border-right: 1px solid #fff;
+}
+
+.create-account form div h1 {
+  padding: 25px;
 }
 
 .create-account form div input {
@@ -348,15 +362,47 @@ div.form-group{
   background-color: #8c8c8c;
   border: none;
   color: #fff;
-  margin-bottom: 15px;
+}
+#email {
+  margin: 5px 0px 15px 5px;
 }
 
-.btn-acess{
+#password{
+  margin: 5px 0px 0px 5px;
+}
+
+ a.recover-password {
+  text-decoration: none;
+  font-size: 0.7em;
+  margin-bottom: 20px;
+ }
+
+.create-account form div button.btn-acess {
+  padding: 10px;
   align-items: center;
-  width: 80%;
+  width: 85%;
   background-color: #F0EE04;
   color: #000;
   border-radius: 18px;
   font-style: bold;
+  margin: 20px 0px;
+  border: none;
 }
 
+.create-account form div button.btn-acess a {
+  font-size: 1em;
+  color: #000;
+  text-decoration: none;
+  font-weight: bolder;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.create-account form div button.btn-acess:hover,
+.create-account form div button.btn-acess:hover a{
+  background-color: #000;
+  color: #F0EE04;
+  transition: .1s;
+  cursor: pointer;
+}

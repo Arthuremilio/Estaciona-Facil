@@ -8,6 +8,7 @@
     .hamburger-menu {
       display: block; 
     }
+
     section.home {
       flex-direction: column;
       align-items: center;
