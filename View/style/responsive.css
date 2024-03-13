@@ -1,0 +1,16 @@
+
+@media only screen and (max-width: 900px) {
+
+    header nav.menu-standard {
+      display: none; 
+    }
+  
+    .hamburger-menu {
+      display: block; 
+    }
+    section.home {
+      flex-direction: column;
+      align-items: center;
+    }
+}
+  
