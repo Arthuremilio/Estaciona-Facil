@@ -16,12 +16,12 @@ header {
   background-color: #333;
   color: #fff;
   padding: 10px;
-  text-align: center;
   display: flex;
   flex-direction: row;
-  align-content: center;
+  align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #fff;
+  text-align: left;
 }
 
 header img {
@@ -405,4 +405,46 @@ div.form-group{
   color: #F0EE04;
   transition: .1s;
   cursor: pointer;
+}
+
+/* System */
+
+header p {
+  margin-top: 4%;
+}
+
+div.title h1{
+  text-align: center;
+  color: #FFF;
+  padding: 30px 0px 60px 0px; 
+  font-size: 2em;
+}
+
+section.system-instruction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+section div.instruction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  padding: 0px 100px;
+  width: 200px;
+}
+
+section div.instruction img {
+  width: auto;
+  height: 200px;
+  top: 0;
+  padding-bottom: 20px ;
+}
+
+section div.instruction p {
+  text-align: center;
+  font-size: 0.8em;
+  color: #FFF;
+  width: 200px;
+  bottom: 0;
 }
