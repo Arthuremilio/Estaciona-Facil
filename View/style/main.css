@@ -410,7 +410,9 @@ div.form-group{
 /* System */
 
 header p {
-  margin-top: 4%;
+  position: absolute;
+  margin-left: 160px;
+  margin-top: 80px;
 }
 
 div.title h1{
