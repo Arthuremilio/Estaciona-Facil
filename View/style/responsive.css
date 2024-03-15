@@ -53,6 +53,16 @@
       padding-bottom: 5px;
       max-width: 80%; 
     }
+
+    .create-account,
+    section.general-create-account,
+    .container {
+      width: 100%;
+    }
+    section.inputs{
+      flex-direction: column;
+      width: 100%;
+    }
     
 }
   
