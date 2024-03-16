@@ -367,13 +367,6 @@ div.form-group{
   border: none;
   color: #fff;
 }
-#email {
-  margin: 5px 0px 15px 5px;
-}
-
-#password{
-  margin: 5px 0px 0px 5px;
-}
 
  a.recover-password {
   text-decoration: none;
@@ -570,3 +563,120 @@ button.continue:hover a{
   transition: .1s;
   cursor: pointer;
 }
+
+/* Reserve */
+
+.register-reservation {
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #5A5A5A;
+  padding: 40px;
+  border-radius: 18px; 
+}
+
+.title-register-reservation h4 {
+  text-align: center;
+  color: #FFF;
+  padding: 15px 0px; 
+  font-size: 2em;
+}
+
+.general-register-reservation {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+div.form-group {
+display: flex;
+flex-direction: column;
+align-items: start;
+}
+
+div.form-group label{
+margin-bottom: 3px;
+justify-content: start;
+}
+
+div.form-group input, select{
+  width: 70%;
+  border-radius: 15px;
+  height: 25px;
+  background-color: #8c8c8c;
+  border: none;
+  color: #fff;
+  padding: 3px;
+}
+div.form-group select#categoria{
+ padding: 15px;
+ width: 73%;
+}
+
+.finalize-reservation {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.form-group button {
+  background-color: #004a95;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.total-reserva {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+section.finalize-reservation{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  margin: auto;
+}
+
+.finalize-reservation > div.form-group {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  justify-content: flex-start; 
+  width: 50%;
+  text-align: start;
+}
+
+button.finalize {
+  width: 65%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+  background-color: #F0EE04;
+  color: #000;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+button.finalize:hover,
+button.finalize:hover a{
+  background-color: #000;
+  color: #F0EE04; 
+  transition: .1s;
+  cursor: pointer;
+}
+
+.finalize-reservation > div > p {
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+

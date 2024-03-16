@@ -1,7 +1,7 @@
 
 @media only screen and (max-width: 900px) {
     main {
-      margin-bottom: 100px;
+      margin-bottom: 100%;
       padding: 20px 0px 20px 20px;
     }
     header nav.menu-standard {
@@ -58,11 +58,29 @@
     section.general-create-account,
     .container {
       width: 100%;
+      align-items: center;
     }
     section.inputs{
       flex-direction: column;
       width: 100%;
+      align-items: center;
     }
-    
+
+    section.finalize-reservation{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    section.finalize-reservation div{
+    justify-content: start;
+    align-items: flex-start;
+    } 
+    button.finalize {
+    width: 100%;
+    }
+    .finalize-reservation > div > p {
+    width: 100%;
+    text-align: start;
+    }
 }
+
   
