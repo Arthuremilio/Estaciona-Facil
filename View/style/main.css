@@ -843,3 +843,67 @@ div.filter-date h4 {
   cursor: pointer;
 }
 
+/* Register Category */
+
+section.register-Category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  margin: auto;
+  margin-top: 35px;
+  padding: 20px;
+  border-radius: 18px;
+  background-color: #5a5a5a;
+  color: #FFF;
+}
+
+section.register-Category form {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  color: #FFF;
+  margin: auto;
+  padding: 20px;
+}
+section.register-Category form > label {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+section.register-Category form  > input {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-radius: 18px;
+  background-color: #8c8c8c;
+  color:  #fff;
+}
+
+section.register-Category form  > input::placeholder {
+  color: #ddd;
+}
+
+section.register-Category form  > button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  font-weight: bolder;
+  border-radius: 18px;
+  background-color: #F0EE04;
+  color: #000;
+  cursor: pointer;
+  margin: 50px 0px 10px 0px;
+}
+
+section.register-Category form > button:hover {
+  background-color: #000;
+  color: #F0EE04; 
+  transition: .1s;
+  cursor: pointer;
+}

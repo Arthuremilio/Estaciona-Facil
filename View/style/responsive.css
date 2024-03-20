@@ -85,6 +85,10 @@
     width: 100%;
     text-align: center;
     }
+
+    section.register-Category {
+      width: 43%;
+    }
 }
 
   
