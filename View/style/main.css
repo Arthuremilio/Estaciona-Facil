@@ -907,3 +907,31 @@ section.register-Category form > button:hover {
   transition: .1s;
   cursor: pointer;
 }
+
+/* Reservation Sumary */
+
+section.reservation-sumary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  margin: auto;
+  margin-top: 35px;
+  padding: 10px;
+  padding-bottom: 20px;
+  border-radius: 18px;
+  background-color: #5a5a5a;
+  color: #FFF;
+}
+
+section.reservation-sumary ul {
+  width: 60%;
+  margin-top: 25px;
+  list-style: none;
+}
+
+section.reservation-sumary ul li{
+  margin-bottom: 20px;
+  font-weight: normal;
+}
