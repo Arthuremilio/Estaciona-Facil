@@ -114,7 +114,6 @@ section.general {
 footer {
   bottom: 0;
   width: 100%;
-  padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
