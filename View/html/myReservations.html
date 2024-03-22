@@ -4,6 +4,7 @@
         <title>Estaciona Fácil</title>
         <link rel="stylesheet" type="text/css" href="../style/main.css">
         <link rel="stylesheet" type="text/css" href="../style/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     </head>
     <body>
         <header>
@@ -41,51 +42,69 @@
                 <table>
                     <thead>
                         <tr>
+                            <th class="tittleReservationCheckbox"></th> 
                             <th>Cliente</th>
                             <th>Estacionamento</th>
                             <th>Data</th>
                             <th>Veículo</th>
+                            <th class="tittleEditButton"></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
+                            <td class="reservationCheckbox"><input type="checkbox"></td> 
                             <td>Ariane Rodrigues</td>
                             <td>Bom Preço</td>
                             <td>13/02/2024, 12:30 - 14/02/2024, 11:30</td>
                             <td>ABC1B34 - HONDA BIZ</td>
+                            <td class="editButton"><button><i class="fa-solid fa-pencil"></i></button></td>
                         </tr>
                         <tr>
+                            <td class="reservationCheckbox"><input type="checkbox"></td> 
                             <td>Henri Moraes</td>
                             <td>Boa Viagem</td>
                             <td>13/02/2024, 12:30 - 14/02/2024, 11:30</td>
                             <td>EKS1F54-HONDA CIVIC</td>
+                            <td class="editButton"><button><i class="fa-solid fa-pencil"></i></button></td>
                         </tr>
                         <tr>
+                            <td class="reservationCheckbox"><input type="checkbox"></td> 
                             <td>João Eduardo</td>
                             <td>Estaciona Fácil</td>
                             <td>13/02/2024, 12:30 - 14/02/2024, 11:30</td>
                             <td>WEO1J56-TOYOTA COROLLA</td>
+                            <td class="editButton"><button><i class="fa-solid fa-pencil"></i></button></td>
                         </tr>
                         <tr>
+                            <td class="reservationCheckbox"><input type="checkbox"></td> 
                             <td>Maria Fernanda</td>
                             <td>Economico Estacionamento</td>
                             <td>13/02/2024, 12:30 - 14/02/2024, 11:30</td>
                             <td>WJD6R78-TOYOTA ETIOS</td>
+                            <td class="editButton"><button><i class="fa-solid fa-pencil"></i></button></td>
                         </tr>
                         <tr>
+                            <td class="reservationCheckbox"><input type="checkbox"></td> 
                             <td>Robson Isaac</td>
                             <td>Med Park</td>
                             <td>13/02/2024, 12:30 - 14/02/2024, 11:30</td>
                             <td>WJD6R78-VOLKSWAGEN GOL</td>
+                            <td class="editButton"><button><i class="fa-solid fa-pencil"></i></button></td>
                         </tr>
                         <tr>
+                            <td class="reservationCheckbox"><input type="checkbox"></td> 
                             <td>Maria Vitória</td>
                             <td>Estacionamento Catedral</td>
                             <td>13/02/2024, 12:30 - 14/02/2024, 11:30</td>
                             <td>WJD6R78 - HONDA CG TITAN</td>
+                            <td class="editButton"><button><i class="fa-solid fa-pencil"></i></button></td>
                         </tr>
                     </tbody>
                 </table>
+            </section>
+            <section class = "btnDelete">
+                <button id="btnDelete">
+                    <i class="fas fa-trash-alt"></i> Excluir selecionados</button>
             </section>
         </main>
         <footer>

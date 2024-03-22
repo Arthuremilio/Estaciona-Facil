@@ -19,4 +19,13 @@ document.addEventListener('DOMContentLoaded', function() {
       overlay.style.display = 'none';
     });
   });
+
+  function toggleRowBackground(rowId) {
+    var row = document.getElementById(rowId);
+    if (row.classList.contains('selected-row')) {
+        row.classList.remove('selected-row');
+    } else {
+        row.classList.add('selected-row');
+    }
+}
   

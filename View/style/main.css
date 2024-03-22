@@ -755,6 +755,65 @@ div.filter-date h4 {
   color: #fff;
 }
 
+.Reservations table tbody tr td.reservationCheckbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: none;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5); 
+}
+
+input[type="checkbox"]:checked ~ .reservationCheckbox {
+  background-color: #7d0000;
+}
+
+.editButton {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.editButton > button{
+  width: 100%;
+  height: 100%;
+  background-color: #5A5A5A;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.editButton > button:hover{
+  background-color: #F0EE04;
+  color: #000;
+}
+
+.btnDelete{
+  width: 80%;
+  border-collapse: collapse;
+  padding: 20px 0px;
+  margin:auto;
+}
+
+.btnDelete > button {
+  padding: 10px;
+  float: right;
+  margin-right: 10px;
+  border-radius: 18px;
+  background-color: #8c8c8c;
+  color: #FFF;
+  border: solid 1px #FFF;
+  cursor: pointer;
+}
+
+.btnDelete > button:hover {
+  background-color: #3b0303;
+  border-color: red;
+}
+
 /* Select Parking */
 
 .filter-city {
