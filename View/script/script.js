@@ -8,12 +8,15 @@ document.addEventListener('DOMContentLoaded', function() {
     checkboxes.forEach(function(checkbox) {
       checkbox.addEventListener('change', function() {
         var row = this.closest('tr');
+        var button = row.querySelector('button.editButton')
         if (this.checked) {
           row.style.backgroundColor = 'darkred';
           row.style.color = 'white';
+          button.style.backgroundColor = 'darkred'
         } else {
           row.style.backgroundColor = '';
           row.style.color = '';
+          button.style.backgroundColor = '';
         }
       });
     });

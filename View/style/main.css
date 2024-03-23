@@ -99,6 +99,31 @@ header nav ul li a {
   cursor: pointer;
 }
 
+.exit {
+  background-color: rgb(255, 21, 21);
+  padding: 12px;
+  border-radius: 18px;
+  color: #fff;
+  border: 3px solid #000;
+}
+
+.exit a {
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  border: none;
+} 
+
+.exit:hover,
+.exit:hover a{
+  background-color: #000;
+  color: red; 
+  transition: .1s;
+  cursor: pointer;
+}
+
 main { 
   width: 100%;
   height: 100%;
@@ -767,6 +792,10 @@ input[type="checkbox"] {
   transform: scale(1.5); 
 }
 
+input[type="checkbox"]:checked::before ~ .Reservations table tbody tr td.editButton > button{
+  background-color: darkred;
+}
+
 .Reservations table tbody tr td.editButton {
   display: flex;
   flex-direction: row;
@@ -785,10 +814,10 @@ input[type="checkbox"] {
 }
 
 .newBackground {
-  background-color: #ff0000; /* Defina a cor de fundo desejada */
+  background-color: #ff0000; 
 }
 
-.editButton > button:hover{
+.Reservations table tbody tr td.editButton > button:hover{
   color: #F0EE04;
 }
 
@@ -802,7 +831,7 @@ input[type="checkbox"] {
 .btnDelete > button {
   padding: 10px;
   float: right;
-  margin-right: 10px;
+  margin-right: 10%;
   border-radius: 18px;
   background-color: #8c8c8c;
   color: #FFF;
