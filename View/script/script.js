@@ -3,29 +3,33 @@ document.addEventListener('DOMContentLoaded', function() {
     const menu = document.querySelector('.menu');
     const overlay = document.querySelector('.overlay');
     const closeMenuButton = document.querySelector('.close-menu');
+    const checkboxes = document.querySelectorAll('.checkbox');
+
+    checkboxes.forEach(function(checkbox) {
+      checkbox.addEventListener('change', function() {
+        var row = this.closest('tr');
+        if (this.checked) {
+          row.style.backgroundColor = 'darkred';
+          row.style.color = 'white';
+        } else {
+          row.style.backgroundColor = '';
+          row.style.color = '';
+        }
+      });
+    });
   
     hamburgerMenu.addEventListener('click', function() {
-      menu.classList.toggle('open'); // Alterne a classe "open"
-      overlay.style.display = menu.classList.contains('open') ? 'block' : 'none'; // Mostra ou esconde o overlay
+      menu.classList.toggle('open'); 
+      overlay.style.display = menu.classList.contains('open') ? 'block' : 'none'; 
     });
   
     overlay.addEventListener('click', function() {
-      menu.classList.remove('open'); // Fecha o menu ao clicar no overlay
+      menu.classList.remove('open'); 
       overlay.style.display = 'none';
     });
   
     closeMenuButton.addEventListener('click', function() {
-      menu.classList.remove('open'); // Fecha o menu ao clicar no botão de fechar
+      menu.classList.remove('open'); 
       overlay.style.display = 'none';
     });
   });
-
-  function toggleRowBackground(rowId) {
-    var row = document.getElementById(rowId);
-    if (row.classList.contains('selected-row')) {
-        row.classList.remove('selected-row');
-    } else {
-        row.classList.add('selected-row');
-    }
-}
-  
