@@ -121,4 +121,15 @@
   .btnDelete > button {
     margin-right: 1%;
   }
+  section.Buttons {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%; 
+  }
+  section.Buttons > button {
+    margin: auto;
+    margin-top: 15px;
+    width: 75%;
+  }
 }

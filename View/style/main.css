@@ -1,7 +1,23 @@
+/* REGRAS */
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+    --bg-principal: #333;
+    --bg-forms: #5A5A5A;
+    --input-color: #8C8C8C;
+    --white: #fff;
+    --black: #000;
+    --yellow: #F0EE04;
+    --dark-red: #3b0303;
+    
+}
 /* Geral */
 
 * {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 
@@ -9,18 +25,18 @@
 
 body{
   width: 100%;
-  background-color: #333;  
+  background-color: var(--bg-principal);  
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--bg-principal);
+  color: var(--white);
   padding: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--white);
   text-align: left;
 }
 
@@ -40,7 +56,7 @@ header h2 {
 }
 
 header nav {
-  background-color: #333;
+  background-color: var(--bg-principal);
   padding: 10px;
   display: flex;
   align-items: center; 
@@ -64,27 +80,27 @@ header nav li a.sistema {
 }
 
 header nav li a.border-right {
-  border-right: 1px solid #fff;
+  border-right: 1px solid var(--white);
   padding: 20px 50px;
 }
 
 header nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
   font-size: 1.5em;
 }
 
 .acess {
-  background-color: #F0EE04;
+  background-color: var(--yellow);
   padding: 10px;
   border-radius: 18px;
-  color: #000;
+  color: var(--black);
   border: none;
 }
 
 .acess a {
   font-size: 1em;
-  color: #000;
+  color: var(--black);
   text-decoration: none;
   font-size: 1.5em;
   font-weight: bold;
@@ -93,23 +109,24 @@ header nav ul li a {
 
 .acess:hover,
 .acess:hover a{
-  background-color: #000;
-  color: #F0EE04; 
+  background-color: var(--black);
+  color: var(--yellow); 
   transition: .1s;
   cursor: pointer;
 }
 
 .exit {
-  background-color: rgb(255, 21, 21);
+  background-color: var(--dark-red);
   padding: 12px;
   border-radius: 18px;
-  color: #fff;
-  border: 3px solid #000;
+  border: none;
+  color: var(--white);
+  box-shadow: 2px 1px 10px 7px #0000002a;
 }
 
 .exit a {
   font-size: 1em;
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   font-size: 1.5em;
   font-weight: bold;
@@ -118,7 +135,7 @@ header nav ul li a {
 
 .exit:hover,
 .exit:hover a{
-  background-color: #000;
+  background-color: var(--black);
   color: red; 
   transition: .1s;
   cursor: pointer;
@@ -131,7 +148,7 @@ main {
 }
 section.general {
   padding: 20px;
-  background-color: #333;
+  background-color: var(--bg-principal);
   display: flex;
   justify-content: center;
 }
@@ -144,8 +161,8 @@ footer {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  background-color: #727272;
-  color: #fff;
+  background-color: var(--input-color);
+  color: var(--white);
   margin-top: 300px;
 }
 
@@ -169,7 +186,7 @@ div.menu-footer ul li {
 }
 
 div.menu-footer ul li a {
-  color: #fff;
+  color: var(--white);
   text-decoration: none; 
 }
 
@@ -190,7 +207,7 @@ div.contact h5 {
   top: 0;
   left: 0;
   width: auto;
-  background-color: #333;
+  background-color: var(--bg-principal);
   padding: 20px;
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
@@ -199,7 +216,7 @@ div.contact h5 {
 
 .menu.open {
   transform: translateX(0);
-  border: 1px solid #5A5A5A
+  border: 1px solid var(--bg-forms);
 
 }
 
@@ -213,23 +230,23 @@ div.contact h5 {
 }
 
 .menu ul li a {
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   font-size: 1.5em;
 }
 
 .menu ul li button.acess {
-  background-color: #F0EE04;
+  background-color: var(--yellow);
   padding: 10px;
   border-radius: 18px;
-  color: #000;
+  color: var(--black);
   border: none;
   width: 100%;
 }
 
 .menu ul li button.acess a {
   font-size: 1em;
-  color: #000;
+  color: var(--black);
   text-decoration: none;
   font-size: 1.5em;
   font-weight: bold;
@@ -238,14 +255,14 @@ div.contact h5 {
 
 .menu ul li button.acess:hover,
 .menu ul li button.acess:hover a {
-  background-color: #000;
-  color: #F0EE04;
+  background-color: var(--black);
+  color: var(--yellow);
   transition: .1s;
   cursor: pointer;
 }
 
 .hamburger-menu {
-  background-color: #333;
+  background-color: var(--bg-principal);
   border: none;
   cursor: pointer;
   padding: 10px;
@@ -253,7 +270,7 @@ div.contact h5 {
 }
 
 .hamburger-menu .icon-menu {
-  background-color: #fff;
+  background-color: var(--white);
   display: block;
   height: 2px;
   width: 20px;
@@ -262,7 +279,7 @@ div.contact h5 {
 
 .hamburger-menu .icon-menu:before,
 .hamburger-menu .icon-menu:after {
-  background-color: #fff;
+  background-color: var(--white);
   content: '';
   display: block;
   height: 2px;
@@ -294,7 +311,7 @@ section div.call-to-action {
   align-items: center;
 }
 section div.call-to-action h1 {
-  color: #fff;
+  color: var(--white);
   font-size: 4em;
   font-display: unset;
   padding-bottom: 50px;
@@ -304,16 +321,16 @@ section div.call-to-action h1 {
 }
 
 .search-parking {
-  background-color: #F0EE04;
+  background-color: var(--yellow);
   padding: 10px;
   border-radius: 18px;
-  color: #000;
+  color: var(--black);
   border: none;
 }
 
 .search-parking a {
   font-size: 1em;
-  color: #000;
+  color: var(--black);
   text-decoration: none;
   font-size: 1.5em;
   font-weight: bold;
@@ -336,8 +353,8 @@ section div.img-home img{
 
 .search-parking:hover,
 .search-parking:hover a {
-  background-color: #000;
-  color: #F0EE04;
+  background-color: var(--black);
+  color: var(--yellow);
   transition: 0.1s;
   cursor: pointer;
 }
@@ -349,7 +366,7 @@ section.container-acess {
   flex-direction: row;
   align-content: start;
   justify-content: start;
-  background-color: #5A5A5A;
+  background-color: var(--bg-forms);;
   padding: 50px 0;
   width: 600px;
   height: 250px;
@@ -359,7 +376,7 @@ section.container-acess {
 }
 
 section.container-acess h1, label, a {
-  color: #FFF;
+  color: var(--white);
   text-align: center;
   padding: 10px 0;
 }
@@ -380,7 +397,7 @@ div.form-group{
 }
 
 #login{
-  border-right: 1px solid #fff;
+  border-right: 1px solid var(--white);
 }
 
 .acess-account form div h1 {
@@ -391,32 +408,31 @@ div.form-group{
   width: 80%;
   border-radius: 15px;
   height: 25px;
-  background-color: #8c8c8c;
+  background-color: var(--input-color);
   border: none;
-  color: #fff;
+  color: var(--white);
 }
 
  a.recover-password {
   text-decoration: none;
   font-size: 0.7em;
-  margin-bottom: 20px;
  }
 
 .acess-account form div button.btn-acess {
   padding: 10px;
   align-items: center;
   width: 85%;
-  background-color: #F0EE04;
-  color: #000;
+  background-color: var(--yellow);
+  color: var(--black);
   border-radius: 18px;
   font-style: bold;
-  margin: 20px 0px;
   border: none;
+  margin-top: 20px;
 }
 
 .acess-account form div button.btn-acess a {
   font-size: 1em;
-  color: #000;
+  color: var(--black);
   text-decoration: none;
   font-weight: bolder;
   border: none;
@@ -426,8 +442,8 @@ div.form-group{
 
 .acess-account form div button.btn-acess:hover,
 .acess-account form div button.btn-acess:hover a{
-  background-color: #000;
-  color: #F0EE04;
+  background-color: var(--black);
+  color: var(--yellow);
   transition: .1s;
   cursor: pointer;
 }
@@ -442,7 +458,7 @@ header p {
 
 div.title h1{
   text-align: center;
-  color: #FFF;
+  color: var(--white);
   padding: 30px 0px 60px 0px; 
   font-size: 2em;
 }
@@ -452,6 +468,14 @@ section.system-instruction {
   flex-direction: row;
   align-items: center;
 }
+
+section div#all > img {
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
 section div.instruction {
   display: flex;
   flex-direction: column;
@@ -469,14 +493,14 @@ section div.instruction img {
 }
 
 section div.instruction h4 {
-  color: #FFF;
+  color: var(--white);
   padding-bottom: 20px;
 }
 
 section div.instruction p {
   text-align: center;
   font-size: 0.8em;
-  color: #FFF;
+  color: var(--white);
   width: 200px;
   bottom: 0;
 }
@@ -488,14 +512,14 @@ section.create-account{
   margin-top: 15px;
    width: 50%;
   height: 70%;
-  background-color: #5A5A5A;
+  background-color: var(--bg-forms);;
   border-radius: 18px;
   padding-bottom: 30px;
 }
 
 .title-create-account {
   text-align: center;
-  color: #FFF;
+  color: var(--white);
   padding: 15px 0px; 
   font-size: 2em;
 }
@@ -507,7 +531,7 @@ section.general-create-account {
 }
 
 section.inputs{
-  background-color: #5A5A5A;
+  background-color: var(--bg-forms);;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -532,9 +556,9 @@ div.input-group input {
   width: 70%;
   border-radius: 15px;
   height: 25px;
-  background-color: #8c8c8c;
+  background-color: var(--input-color);
   border: none;
-  color: #fff;
+  color: var(--white);
   padding: 3px;
 }
 
@@ -555,9 +579,9 @@ div.cep-number > .input-cep > input#cep {
   width: 80%;
   border-radius: 15px;
   height: 25px;
-  background-color: #8c8c8c;
+  background-color: var(--input-color);
   border: none;
-  color: #fff;
+  color: var(--white);
   padding: 3px;
 }
 
@@ -565,9 +589,9 @@ div.cep-number > .input-number > input#numero{
   width: 50%;
   border-radius: 15px;
   height: 25px;
-  background-color: #8c8c8c;
+  background-color: var(--input-color);
   border: none;
-  color: #fff;
+  color: var(--white);
   padding: 3px;
 } 
 
@@ -576,8 +600,8 @@ button.continue {
   padding: 10px;
   font-size: 16px;
   font-weight: bolder;
-  background-color: #F0EE04;
-  color: #000;
+  background-color: var(--yellow);
+  color: var(--black);
   border: none;
   border-radius: 18px;
   cursor: pointer;
@@ -586,8 +610,8 @@ button.continue {
 
 button.continue:hover,
 button.continue:hover a{
-  background-color: #000;
-  color: #F0EE04; 
+  background-color: var(--black);
+  color: var(--yellow); 
   transition: .1s;
   cursor: pointer;
 }
@@ -598,14 +622,14 @@ button.continue:hover a{
   width: 50%;
   margin: auto;
   margin-top: 10px;
-  background-color: #5A5A5A;
+  background-color: var(--bg-forms);;
   border-radius: 18px;
   margin-bottom: 120px; 
 }
 
 .title-register-reservation h4 {
   text-align: center;
-  color: #FFF;
+  color: var(--white);
   font-size: 2em;
   padding-top: 20px;
 }
@@ -631,9 +655,9 @@ div.form-group input, select{
   width: 70%;
   border-radius: 15px;
   height: 25px;
-  background-color: #8c8c8c;
+  background-color: var(--input-color);
   border: none;
-  color: #fff;
+  color: var(--white);
   padding: 3px;
 }
 div.form-group select#categoria{
@@ -647,8 +671,7 @@ div.form-group select#categoria{
 }
 
 .form-group button {
-  background-color: #004a95;
-  color: #fff;
+  color: var(--white);
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -684,8 +707,8 @@ button.finalize {
   padding: 10px;
   font-size: 16px;
   font-weight: bolder;
-  background-color: #F0EE04;
-  color: #000;
+  background-color: var(--yellow);
+  color: var(--black);
   border: none;
   border-radius: 18px;
   cursor: pointer;
@@ -694,14 +717,14 @@ button.finalize {
 
 button.finalize:hover,
 button.finalize:hover a{
-  background-color: #000;
-  color: #F0EE04; 
+  background-color: var(--black);
+  color: var(--yellow); 
   transition: .1s;
   cursor: pointer;
 }
 
 .finalize-reservation > div > p {
-  color: #fff;
+  color: var(--white);
   width: 100%;
   padding: 10px;
   font-size: 16px;
@@ -721,7 +744,7 @@ button.finalize:hover a{
 section.filter > div.title-Resevations > h2 {
   margin-bottom: 10px;
   font-size: 18px;
-  color: #fff;
+  color: var(--white);
 }
 
 div.filter-date {
@@ -732,7 +755,7 @@ div.filter-date {
 }
 
 div.filter-date h4 {
-  color: #FFF;
+  color: var(--white);
   margin-right: 10px;
 }
 
@@ -740,8 +763,8 @@ div.filter-date h4 {
   padding: 5px 10px;
   border: 1px solid #ddd;
   border-radius: 18px;
-  background-color: #5A5A5A;
-  color: #fff;
+  background-color: var(--bg-forms);;
+  color: var(--white);
 }
 
 .Reservations {
@@ -759,26 +782,26 @@ div.filter-date h4 {
 }
 
 .Reservations table thead {
-  background-color: #5a5a5a;
+  background-color: var(--bg-forms);;
   color: white;
 }
 
 .Reservations table thead tr th {
   background-color: white;
-  color: #000;
+  color: var(--black);
   padding: 10px;
   text-align: center;
 }
 
 .Reservations table tbody tr {
-  background-color: #5a5a5a;
+  background-color: var(--bg-forms);;
   border: 1px solid #ddd;
 }
 
 .Reservations table tbody tr td {
   padding: 10px;
   border-right: 1px solid #ddd;
-  color: #fff;
+  color: var(--white);
 }
 
 .Reservations table tbody tr td.reservationCheckbox{
@@ -805,8 +828,8 @@ input[type="checkbox"]:checked::before ~ .Reservations table tbody tr td.editBut
 }
 
 .Reservations table tbody tr td.editButton > button{
-  background-color: #5A5A5A;
-  color: #fff;
+  background-color: var(--bg-forms);;
+  color: var(--white);
   cursor: pointer;
   padding: 5px;
   border: none;
@@ -818,7 +841,7 @@ input[type="checkbox"]:checked::before ~ .Reservations table tbody tr td.editBut
 }
 
 .Reservations table tbody tr td.editButton > button:hover{
-  color: #F0EE04;
+  color: var(--yellow);
 }
 
 .btnDelete{
@@ -833,14 +856,14 @@ input[type="checkbox"]:checked::before ~ .Reservations table tbody tr td.editBut
   float: right;
   margin-right: 10%;
   border-radius: 18px;
-  background-color: #8c8c8c;
-  color: #FFF;
-  border: solid 1px #FFF;
+  background-color: var(--input-color);
+  color: var(--white);
+  border: solid 1px var(--white);
   cursor: pointer;
 }
 
 .btnDelete > button:hover {
-  background-color: #3b0303;
+  background-color: var(--dark-red);
   border-color: red;
 }
 
@@ -859,8 +882,8 @@ input[type="checkbox"]:checked::before ~ .Reservations table tbody tr td.editBut
   border: none;
   border-radius: 18px;
   margin: 25px 0;
-  background-color: #5a5a5a;
-  color:  #fff;
+  background-color: var(--bg-forms);;
+  color:  var(--white);
 }
 
 .parking {
@@ -897,12 +920,12 @@ input[type="checkbox"]:checked::before ~ .Reservations table tbody tr td.editBut
 
 .parking-card h3 {
   margin-top: 10px;
-  color: #fff;
+  color: var(--white);
 }
 
 .parking-card p {
   margin: 7px 0px;
-  color: #fff;
+  color: var(--white);
   font-size: 0.7em;
 }
 
@@ -912,21 +935,21 @@ input[type="checkbox"]:checked::before ~ .Reservations table tbody tr td.editBut
   border: none;
   font-weight: bolder;
   border-radius: 18px;
-  background-color: #F0EE04;
-  color: #000;
+  background-color: var(--yellow);
+  color: var(--black);
   cursor: pointer;
   margin-bottom: 10px;
 }
 
 .parking-card button a{
   text-decoration: none;
-  color: #000;
+  color: var(--black);
 }
 
 .parking-card > button:hover,
 .parking-card > button:hover a{
-  background-color: #000;
-  color: #F0EE04; 
+  background-color: var(--black);
+  color: var(--yellow); 
   transition: .1s;
   cursor: pointer;
 }
@@ -943,15 +966,15 @@ section.register-Category {
   margin-top: 35px;
   padding: 20px;
   border-radius: 18px;
-  background-color: #5a5a5a;
-  color: #FFF;
+  background-color: var(--bg-forms);;
+  color: var(--white);
 }
 
 section.register-Category form {
   display: flex;
   flex-direction: column;
   width: 65%;
-  color: #FFF;
+  color: var(--white);
   margin: auto;
   padding: 20px;
 }
@@ -969,29 +992,46 @@ section.register-Category form  > input {
   padding: 10px;
   border: none;
   border-radius: 18px;
-  background-color: #8c8c8c;
-  color:  #fff;
+  background-color: var(--input-color);
+  color:  var(--white);
 }
 
 section.register-Category form  > input::placeholder {
   color: #ddd;
 }
-
-section.register-Category form  > button {
-  width: 100%;
+.search-file {
+  width: 70%;
+  padding: 10px 0px;
+  background: linear-gradient(105deg, rgba(51, 51, 51, 0.162) 0%, rgba(255,255,255,1) 100%);
+  border: none;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.search-file i {
+  margin-right: 10px;
+}
+section.Buttons {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  width: 90%; 
+  
+}
+section.Buttons > button {
+  width: 48%;
   padding: 10px;
   border: none;
   font-weight: bolder;
   border-radius: 18px;
-  background-color: #F0EE04;
-  color: #000;
+  background-color: var(--yellow);
+  color: var(--black);
   cursor: pointer;
   margin: 50px 0px 10px 0px;
 }
 
-section.register-Category form > button:hover {
-  background-color: #000;
-  color: #F0EE04; 
+section.Buttons > button:hover {
+  background-color: var(--black);
+  color: var(--yellow); 
   transition: .1s;
   cursor: pointer;
 }
@@ -1009,8 +1049,8 @@ section.reservation-sumary {
   padding: 10px;
   padding-bottom: 20px;
   border-radius: 18px;
-  background-color: #5a5a5a;
-  color: #FFF;
+  background-color: var(--bg-forms);;
+  color: var(--white);
 }
 
 section.reservation-sumary ul {
